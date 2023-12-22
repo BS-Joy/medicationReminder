@@ -4,7 +4,7 @@ import { getCurrentUser } from "../slices/user/userSlice";
 export default function Footer() {
   const user = useSelector(getCurrentUser);
 
-  if (user?.userRole === "regular") {
+  if (user?.userRole === "regular" || user === null) {
     return (
       <>
         {/*<!-- Component: Primary Dark Theme Footer --> */}
