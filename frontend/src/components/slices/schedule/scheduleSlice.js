@@ -6,7 +6,7 @@ import {
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000/schedule";
+const baseUrl = "https://medication-reminder-gsj30zhd7-bs-joy.vercel.app/schedule";
 
 export const createSchedule = createAsyncThunk(
   "/addSchedule",

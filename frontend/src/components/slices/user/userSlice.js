@@ -2,7 +2,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000/user";
+const baseUrl = "https://medication-reminder-gsj30zhd7-bs-joy.vercel.app/user";
 
 export const createUser = createAsyncThunk("/register", async (userData, {rejectWithValue}) => {
   try {

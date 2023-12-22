@@ -7,7 +7,7 @@ import {
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000/medication";
+const baseUrl = "https://medication-reminder-gsj30zhd7-bs-joy.vercel.app/medication";
 
 export const addMedication = createAsyncThunk("/addmedication", async (medicationData, { rejectWithValue }) => {
     try {
